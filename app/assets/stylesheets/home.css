@@ -1,0 +1,42 @@
+.fa.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.site-footer {
+    padding-top: 2rem;
+}
+
+.site-footer-social {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    padding-top: 1rem;
+}
+
+.site-footer-legal {
+    font-size: 0.8rem;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+.nav-link {
+    color: white !important;
+}
+.navbar-rotary {
+    background-color: #019fcb !important;
+}
+.btn {
+    border-radius: 16px !important;
+    margin-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+

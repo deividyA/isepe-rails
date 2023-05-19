@@ -1,0 +1,33 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 98285438b
+  host: localhost
+  port: 5433
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: isepe
+  username: postgres
+  password: 98285438b
+  host: localhost
+  port: 5433
+
+test:
+  <<: *default
+  database: isepe
+  username: postgres
+  password: 98285438b
+  host: localhost
+  port: 5433
+
+production:
+  <<: *default
+  database: isepe
+  username: postgres
+  password: 98285438b
+  host: localhost
+  port: 5433
+  password: <%= ENV["ISEPE_DATABASE_PASSWORD"] %>

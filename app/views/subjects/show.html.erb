@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
+
+      <div class="form-group mb-3">
+    <p><strong>Name:</strong></p>
+    <div>
+      <%= @subject.name %>
+    </div>
+  </div>
+  
+      <div class="form-group mb-3">
+    <p><strong>Description:</strong></p>
+    <div>
+      <%= @subject.description %>
+    </div>
+  </div>
+  
+      <div class="form-group mb-3">
+    <p><strong>Active:</strong></p>
+    <div>
+      <%= @subject.active %>
+    </div>
+  </div>
+  
+  
+  <%= link_to 'Edit', edit_subject_path(@subject), class: "btn btn-primary min-width-btn" %>
+  <%= link_to 'Back', subjects_path, class: "btn btn-light min-width-btn" %>
+</div>

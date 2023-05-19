@@ -1,0 +1,13 @@
+.center-form{
+    color: white;
+    width: 25%;
+    
+    margin-top: 10rem;
+}
+
+.form-background-login {    
+    text-align: center;
+    border-radius: 25px;
+    padding: 1.7rem;
+    background-color: #019fcb !important;
+}
