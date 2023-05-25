@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
+
+      <div class="form-group mb-3">
+    <p><strong>Teacher:</strong></p>
+    <div>
+      <%= @classroom_teacher.teacher_id %>
+    </div>
+  </div>
+  
+      <div class="form-group mb-3">
+    <p><strong>Classroom:</strong></p>
+    <div>
+      <%= @classroom_teacher.classroom_id %>
+    </div>
+  </div>
+  
+      <div class="form-group mb-3">
+    <p><strong>Subject:</strong></p>
+    <div>
+      <%= @classroom_teacher.subject_id %>
+    </div>
+  </div>
+  
+  
+  <%= link_to 'Edit', edit_classroom_teacher_path(@classroom_teacher), class: "btn btn-primary min-width-btn" %>
+  <%= link_to 'Back', classroom_teachers_path, class: "btn btn-light min-width-btn" %>
+</div>

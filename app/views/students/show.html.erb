@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <p id="notice"><%= notice %></p>
+
+      <div class="form-group mb-3">
+    <p><strong>Person:</strong></p>
+    <div>
+      <%= @student.person_id %>
+    </div>
+  </div>
+  
+      <div class="form-group mb-3">
+    <p><strong>School education:</strong></p>
+    <div>
+      <%= @student.school_education %>
+    </div>
+  </div>
+  
+  
+  <%= link_to 'Edit', edit_student_path(@student), class: "btn btn-primary min-width-btn" %>
+  <%= link_to 'Back', students_path, class: "btn btn-light min-width-btn" %>
+</div>

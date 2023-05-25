@@ -1,10 +1,10 @@
-<%= form_with(model: subject) do |form| %>
-  <% if subject.errors.any? %>
+<%= form_with(model: person) do |form| %>
+  <% if person.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(subject.errors.count, "error") %> prohibited this subject from being saved:</h2>
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
 
       <ul>
-        <% subject.errors.each do |error| %>
+        <% person.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -17,13 +17,13 @@
   </div>
 
   <div class="form-group mb-3">
-    <%= form.label :description, class: "form-label" %>
-    <%= form.text_field :description, class:"form-control" %>
+    <%= form.label :born, class: "form-label" %>
+    <%= form.date_field :born, class:"form-control" %>
   </div>
 
   <div class="form-group mb-3">
-    <%= form.label :active, class: "form-check-label" %>
-    <%= form.check_box :active, class:"form-check-input" %>
+    <%= form.label :email, class: "form-label" %>
+    <%= form.text_field :email, class:"form-control" %>
   </div>
 
   <div class="form-group mb-3">

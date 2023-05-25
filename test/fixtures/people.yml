@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  description: MyString
-  active: false
+  born: 2023-05-25
+  email: MyString
 
 two:
   name: MyString
-  description: MyString
-  active: false
+  born: 2023-05-25
+  email: MyString
