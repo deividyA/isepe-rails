@@ -64,6 +64,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_25_235716) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "teachers", force: :cascade do |t|
     t.bigint "person_id", null: false
     t.string "graduation"
